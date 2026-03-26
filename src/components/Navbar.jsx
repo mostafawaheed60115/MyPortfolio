@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav id="navbar" className="fixed top-0 w-full z-50 transition-all duration-300" style={{ background: 'rgba(6,12,20,0.85)', backdropFilter: 'blur(20px)', boxShadow: '0 4px 40px rgba(0,0,0,0.5)' }}>
       <div className="flex justify-between items-center px-6 md:px-10 py-4 max-w-7xl mx-auto">
         <a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className="text-xl font-bold tracking-[0.2em] text-primary uppercase font-headline" style={{ textShadow: '0 0 10px rgba(0,240,255,0.3)' }}>
-          MW_<span className="text-on-surface" style={{ textShadow: 'none' }}>SYSTEMS</span>
+          Mostafa<span className="text-on-surface" style={{ textShadow: 'none' }}>Waheed</span>
         </a>
 
         {/* Desktop nav */}
@@ -47,7 +47,7 @@ export default function Navbar() {
           className="md:hidden text-primary"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></svg>
         </button>
       </div>
 
