@@ -18,41 +18,35 @@ export default function Hero() {
             </span>
             <h1 className="font-headline text-6xl md:text-8xl font-bold tracking-tighter leading-none uppercase">
               Mostafa<br />
-              <span className="text-primary" style={{ textShadow: '0 0 16px rgba(0,240,255,0.4)' }}>Waheed</span>
+              <span className="text-primary text-glow-primary">Waheed</span>
             </h1>
             <p className="text-xl md:text-2xl font-headline text-on-surface-variant font-light max-w-lg leading-snug">
               Mission-grade AI systems built with military precision and backend expertise.
             </p>
           </div>
           <p className="font-body text-on-surface/70 max-w-md leading-relaxed text-sm">
-            Two years of high-stakes AI engineering at the Egyptian Air Force — crafting NLP models, computer vision systems, C++ simulators, and intelligent backend architectures that perform when it counts.
+            Lead Backend Architect at Connecto, managing backend systems and AI agents for 2,000+ merchants. Previously engineered high-stakes AI models, simulators, and NLP tools for the Egyptian Air Force.
           </p>
-          <div className="flex flex-wrap gap-6 items-center">
+          <div className="flex flex-wrap gap-4 items-center">
             <a
               href="https://www.linkedin.com/in/mostafa-waheed-29009b346/"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-2 text-primary hover:text-primary-dim transition-colors group"
+              className="btn-glow px-6 py-3 bg-primary text-on-primary-fixed font-mono text-xs uppercase tracking-widest font-bold flex items-center gap-2"
             >
               <span className="material-symbols-outlined text-base">open_in_new</span>
-              <span className="font-mono uppercase text-xs tracking-widest font-bold border-b border-primary/40 pb-0.5">
-                LinkedIn Profile
-              </span>
+              LinkedIn Profile
             </a>
-            {/* Added CV Download */}
             <a
               href="/mostafa_waheed_.pdf"
               download
-              className="flex items-center gap-2 text-gold hover:text-gold/80 transition-colors group"
+              className="btn-glow px-6 py-3 border border-gold text-gold font-mono text-xs uppercase tracking-widest font-bold flex items-center gap-2 hover:bg-gold/5"
             >
               <span className="material-symbols-outlined text-base">download</span>
-              <span className="font-mono uppercase text-xs tracking-widest font-bold border-b border-gold/40 pb-0.5">
-                Download CV
-              </span>
+              Download CV
             </a>
-            <div className="h-px w-10 bg-outline-variant/40"></div>
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-primary" style={{ animation: 'pulse-dot 2s infinite' }}></span>
+            <div className="flex items-center gap-2 pl-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" style={{ animation: 'pulse-dot 2s infinite' }}></span>
               <span className="font-mono text-[10px] text-outline uppercase tracking-widest">Available for Hire</span>
             </div>
           </div>
@@ -60,15 +54,15 @@ export default function Hero() {
           {/* Stats row */}
           <div className="flex gap-8 pt-4 border-t border-outline-variant/20">
             <div>
-              <div className="font-headline text-3xl font-bold text-primary">2.5+</div>
+              <div className="font-headline text-3xl font-bold text-primary">2+</div>
               <div className="font-mono text-[10px] text-outline uppercase tracking-wider mt-1">Years Active</div>
             </div>
             <div>
-              <div className="font-headline text-3xl font-bold text-primary">8+</div>
+              <div className="font-headline text-3xl font-bold text-primary">8</div>
               <div className="font-mono text-[10px] text-outline uppercase tracking-wider mt-1">Certificates</div>
             </div>
             <div>
-              <div className="font-headline text-3xl font-bold text-primary">5+</div>
+              <div className="font-headline text-3xl font-bold text-primary">5</div>
               <div className="font-mono text-[10px] text-outline uppercase tracking-wider mt-1">Roles Held</div>
             </div>
             <div>
@@ -119,7 +113,7 @@ export default function Hero() {
             <div className="space-y-4 pt-2">
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-[16px]">mail</span>
-                <span className="font-mono text-[10px] text-on-surface-variant">mostafaawaheed0@gmail.com</span>
+                <span className="font-mono text-[10px] text-on-surface-variant">mostafawaheed60115@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-[16px]">phone_iphone</span>
@@ -134,17 +128,17 @@ export default function Hero() {
             {/* Tags */}
             <div className="flex flex-wrap gap-2 pt-2">
               {[
-                { label: 'Python', color: 'primary' },
-                { label: 'FastAPI', color: 'secondary' },
-                { label: 'PostgreSQL & MySQL', color: 'secondary' },
-                { label: 'NLP & CV', color: 'secondary' },
-                { label: 'C++ / Qt', color: 'tertiary' },
-                { label: 'RAG', color: 'gold' },
-                { label: 'Flask & Quart', color: 'primary' },
+                { label: 'Python', classes: 'bg-primary/5 border border-primary/30 text-primary' },
+                { label: 'FastAPI', classes: 'bg-secondary/5 border border-secondary/30 text-secondary' },
+                { label: 'PostgreSQL & MySQL', classes: 'bg-secondary/5 border border-secondary/30 text-secondary' },
+                { label: 'NLP & CV', classes: 'bg-secondary/5 border border-secondary/30 text-secondary' },
+                { label: 'C++ / Qt', classes: 'bg-tertiary/5 border border-tertiary/30 text-tertiary' },
+                { label: 'Agno Agents', classes: 'bg-gold/5 border border-gold/30 text-gold' },
+                { label: 'React', classes: 'bg-primary/5 border border-primary/30 text-primary' },
               ].map((tag, i) => (
                 <span
                   key={i}
-                  className={`px-2 py-1 bg-${tag.color}/5 border border-${tag.color}/30 text-${tag.color} font-mono text-[10px] tracking-widest`}
+                  className={`px-2 py-1 ${tag.classes} font-mono text-[10px] tracking-widest`}
                 >
                   {tag.label}
                 </span>

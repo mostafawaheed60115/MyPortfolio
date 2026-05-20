@@ -27,8 +27,15 @@ function App() {
 
   return (
     <>
+      {/* Ambient background blur elements */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="absolute top-[10%] left-[-10%] w-[50vw] h-[50vw] bg-primary/4 rounded-full blur-[120px] animate-float-1"></div>
+        <div className="absolute bottom-[10%] right-[-10%] w-[55vw] h-[55vw] bg-secondary/4 rounded-full blur-[140px] animate-float-2"></div>
+        <div className="absolute top-[50%] left-[30%] w-[45vw] h-[45vw] bg-tertiary/3 rounded-full blur-[150px] animate-float-3"></div>
+      </div>
+
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Experience />

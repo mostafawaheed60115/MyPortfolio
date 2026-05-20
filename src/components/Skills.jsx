@@ -1,27 +1,27 @@
 const skills = [
   {
-    icon: 'terminal', label: 'S01', title: 'Python Ecosystem',
-    tags: ['Flask', 'FastAPI', 'Quart', 'Agno', 'Pandas'],
+    icon: 'neurology', label: 'S01', title: 'AI & Deep Learning',
+    tags: ['TensorFlow', 'Agno Agents', 'NLP', 'Computer Vision', 'ML / DL'],
   },
   {
-    icon: 'neurology', label: 'S02', title: 'AI / Deep Learning',
-    tags: ['TensorFlow', 'NLP', 'Computer Vision', 'ML / DL'], delay: '0.05s',
+    icon: 'terminal', label: 'S02', title: 'Python & Web',
+    tags: ['Python', 'Flask & FastAPI', 'React', 'Quart', 'Pandas'], delay: '0.05s',
   },
   {
-    icon: 'code', label: 'S03', title: 'C++ / Systems',
+    icon: 'code', label: 'S03', title: 'C++ & Systems',
     tags: ['C++', 'Qt / QML', 'Linux', 'Simulators'], delay: '0.1s',
   },
   {
-    icon: 'database', label: 'S04', title: 'Backend & APIs',
-    tags: ['MySQL', 'REST APIs', 'Deployment'], delay: '0.15s',
+    icon: 'database', label: 'S04', title: 'Backend & Caching',
+    tags: ['PostgreSQL', 'MySQL', 'Redis', 'RESTful APIs'], delay: '0.15s',
   },
   {
-    icon: 'hub', label: 'S05', title: 'Networking',
-    tags: ['Cisco', 'Network Admin', 'Systems Integration'], delay: '0.2s',
+    icon: 'hub', label: 'S05', title: 'Cloud & Networking',
+    tags: ['GCP', 'Cisco Networking', 'Docker', 'Deployment', 'Integration'], delay: '0.2s',
   },
   {
-    icon: 'psychology', label: 'S06', title: 'Soft Skills',
-    tags: ['Leadership', 'Communication', 'Innovation', 'Teaching'], delay: '0.25s',
+    icon: 'psychology', label: 'S06', title: 'Training & Instruction',
+    tags: ['CS Teaching', 'Technical Training', 'Leadership', 'Communication'], delay: '0.25s',
   },
 ]
 
@@ -39,7 +39,7 @@ export default function Skills() {
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="bg-surface-container-low p-8 border border-outline-variant/10 hover:border-primary/40 transition-all duration-300 group reveal"
+              className="tech-card bg-surface-container p-8 border border-outline-variant/10 group reveal"
               style={skill.delay ? { transitionDelay: skill.delay } : {}}
             >
               <div className="flex justify-between items-start mb-10">

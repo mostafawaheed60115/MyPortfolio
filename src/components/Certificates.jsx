@@ -1,28 +1,28 @@
 const certificates = [
   {
     icon: 'verified', iconColor: 'primary', gradientColor: 'primary',
-    title: 'Web App Development', issuer: 'EAF / US GOVERNMENT',
+    title: 'Web Application Development', issuer: 'EAF – US Government',
   },
   {
     icon: 'terminal', iconColor: 'secondary', gradientColor: 'secondary',
-    title: 'Python & Flask', issuer: 'EAF CERTIFIED', delay: '0.05s',
+    title: 'Python Programming & Flask Framework', issuer: 'Egyptian Air Force', delay: '0.05s',
   },
   {
     icon: 'neurology', iconColor: 'primary', gradientColor: 'primary',
-    title: 'Computer Vision & NLP', issuer: 'EAF CERTIFIED', delay: '0.1s',
+    title: 'Introduction to Computer Vision & NLP', issuer: 'Egyptian Air Force', delay: '0.1s',
   },
   {
     icon: 'hub', iconColor: 'gold', gradientColor: 'gold',
-    title: 'Cisco Network Admin', issuer: 'US GOVERNMENT', delay: '0.15s',
+    title: 'Cisco Network Administrator', issuer: 'US Government', delay: '0.15s',
   },
   {
-    title: 'C++ Beginner to Expert', issuer: 'UDEMY', delay: '0.2s',
+    title: 'C++ From Beginner to Expert', issuer: 'Udemy', delay: '0.2s',
     image: '/certificates/cpp-udemy.png',
     gradientColor: 'tertiary',
   },
   {
     icon: 'layers', iconColor: 'secondary', gradientColor: 'secondary',
-    title: 'Qt / QML Mastery', issuer: 'UDEMY', delay: '0.25s',
+    title: 'Qt & QML From Beginner to Expert', issuer: 'Udemy', delay: '0.25s',
   },
   {
     title: 'AI Fundamentals', issuer: 'IBM', delay: '0.3s',
@@ -30,7 +30,7 @@ const certificates = [
     gradientColor: 'primary',
   },
   {
-    title: 'Intro to Generative AI', issuer: 'UDACITY / AWS', delay: '0.35s',
+    title: 'Introducing Generative AI with AWS', issuer: 'Udacity', delay: '0.35s',
     image: '/certificates/generative-ai-aws.png',
     gradientColor: 'gold',
   },
@@ -53,7 +53,7 @@ export default function Certificates() {
           {certificates.map((cert, i) => (
             <div
               key={i}
-              className="bg-surface-container p-5 border border-outline-variant/10 hover:shadow-[0_0_24px_rgba(0,240,255,0.1)] transition-all duration-300 group reveal"
+              className="tech-card bg-surface-container p-5 border border-outline-variant/10 group reveal"
               style={cert.delay ? { transitionDelay: cert.delay } : {}}
             >
               <div className={`aspect-video bg-gradient-to-br from-${cert.gradientColor}/10 to-surface-container-highest mb-5 flex items-center justify-center border border-outline-variant/20 relative overflow-hidden`}>

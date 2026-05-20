@@ -7,10 +7,10 @@ export default function Footer() {
         </span>
         <div className="flex flex-wrap justify-center gap-8">
           <a href="https://www.linkedin.com/in/mostafa-waheed-29009b346/" target="_blank" rel="noreferrer" className="font-mono text-[10px] tracking-[0.2em] uppercase text-outline hover:text-primary transition-colors">LinkedIn</a>
-          <a href="mailto:mostafaawaheed0@gmail.com" className="font-mono text-[10px] tracking-[0.2em] uppercase text-outline hover:text-primary transition-colors">Email</a>
+          <a href="mailto:mostafawaheed60115@gmail.com" className="font-mono text-[10px] tracking-[0.2em] uppercase text-outline hover:text-primary transition-colors">Email</a>
           <a href="tel:+201509999283" className="font-mono text-[10px] tracking-[0.2em] uppercase text-outline hover:text-primary transition-colors">Phone</a>
         </div>
-        <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-outline/50">© 2025 MOSTAFA WAHEED // SYSTEM_STABLE</p>
+        <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-outline/50">© 2026 MOSTAFA WAHEED // SYSTEM_STABLE</p>
       </div>
     </footer>
   )

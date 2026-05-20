@@ -39,11 +39,11 @@ export default function About() {
         </div>
 
         <div className="lg:col-span-8 reveal" style={{ transitionDelay: '0.1s' }}>
-          <h2 className="font-body text-lg md:text-xl text-on-surface/90 leading-relaxed  font-headline font-bold mr-3 float-left text-primary leading-none">
-            AI Engineer with two years of experience at the Egyptian Air Force, specialising in building practical, high-impact AI solutions in NLP and Computer Vision. Experienced in Machine Learning, Deep Learning, and hybrid architectures, with strong proficiency in Python, C++, and full-stack web development.
+          <h2 className="font-body text-lg md:text-xl text-on-surface/90 leading-relaxed font-headline font-bold mr-3 float-left text-primary leading-none">
+            AI and Backend Engineer with 2+ years of hands-on experience building mission-critical AI systems and lead backend architect at Connecto, managing full-stack e-commerce infrastructure for 2,000+ merchants.
           </h2>
           <p className="font-body text-on-surface/70 mt-6 leading-relaxed">
-            Contributed to mission-critical military AI systems, demonstrating reliability and performance under high-pressure conditions. Skilled in Cisco networking and systems integration. Academically developed a <span className="text-primary font-semibold">Multimodal Sentiment Analysis</span> graduation system combining text, emoji, and audio into a unified deep learning model.
+            Specializing in NLP, Computer Vision, C++, and full-stack web development. Proven track record of delivering high-performance solutions under high-stakes conditions, from EAF military-grade simulators and secure Flask/MySQL networks to real-time AI agents and GCP cloud-native deployments. Academically developed a <span className="text-primary font-semibold">Multimodal Sentiment Analysis</span> graduation system combining text, emoji, and audio into a unified deep learning model at the Military Technical College.
           </p>
 
           {/* Language bars */}

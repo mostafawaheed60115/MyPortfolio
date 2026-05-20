@@ -21,8 +21,8 @@ export default function Contact() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="mailto:mostafaawaheed0@gmail.com"
-                className="bg-gradient-to-r from-primary to-[#00c8d4] text-on-primary-fixed px-10 py-4 font-headline font-bold uppercase tracking-[0.2em] text-sm hover:shadow-[0_0_28px_rgba(0,240,255,0.45)] transition-all"
+                href="mailto:mostafawaheed60115@gmail.com"
+                className="btn-glow bg-gradient-to-r from-primary to-[#00c8d4] text-on-primary-fixed px-10 py-4 font-headline font-bold uppercase tracking-[0.2em] text-sm"
               >
                 Send_Message
               </a>
@@ -30,7 +30,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/mostafa-waheed-29009b346/"
                 target="_blank"
                 rel="noreferrer"
-                className="border border-outline-variant/40 text-primary px-10 py-4 font-headline font-bold uppercase tracking-[0.2em] text-sm hover:bg-primary/10 hover:border-primary/40 transition-all"
+                className="btn-glow border border-outline-variant/40 text-primary px-10 py-4 font-headline font-bold uppercase tracking-[0.2em] text-sm hover:bg-primary/10 hover:border-primary/40"
               >
                 LinkedIn_Profile
               </a>

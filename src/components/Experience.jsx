@@ -1,14 +1,16 @@
 const experiences = [
   {
-    period: 'Present',
-    duration: 'Currently',
+    period: 'Sep 2025 – Present',
+    duration: '9 Months',
     title: 'Connecto',
-    role: 'AI & Backend Engineer · Remote',
+    role: 'Lead Backend Architect / AI & Backend Engineer · Remote',
     active: true,
     items: [
-      'Design, development, and deployment of the Connecto website and platform.',
-      'Providing all technical solutions required for supporting company departments.',
-      'Design, development and deployment of Connecto platform AI Agents.',
+      'Lead backend architect of connecto-me.com — a unified e-commerce management platform serving 2,000+ merchants across Amazon, Noon, Jumia, and Trendyol.',
+      'Designed, developed, and deployed the full Connecto web platform and its backend infrastructure from the ground up.',
+      'Built and deployed AI-powered agents to automate product listing, catalogue management, and merchant workflows.',
+      'Provided all technical solutions supporting cross-department operations, ensuring platform reliability and scalability.',
+      'Delivered AI features including intelligent product image processing (background removal, platform compliance) and advanced analytics.',
     ],
   },
   {
@@ -17,43 +19,41 @@ const experiences = [
     title: 'Ariegsa Solutions',
     role: 'Software Engineer · Remote',
     items: [
-      'Built high-performance military software for simulators, monitoring systems and MFDs using C++ / Qt / QML.',
-      'Designed an Operation Software for an aircraft simulator; integrated with Microsoft Flight Simulator and DCS.',
-      'Built a Rocket-Launch Decision Helper AI model to assist pilots in air combat.',
-      'Delivered flight analytics for pilot attitude and performance using Flask and Chart.js.',
+      'Designed high-performance military software using C++ and Qt/QML for simulators, monitoring systems, and MFDs.',
+      'Developed a full Operation Software for an aircraft simulator, integrating with Microsoft Flight Simulator and DCS.',
+      'Engineered a Rocket-Launch Decision Helper model to assist pilots in real-time air combat scenarios.',
+      'Delivered hands-on programming and AI training sessions to technical staff.',
     ],
   },
   {
     period: 'Aug 2024 – Aug 2025',
     duration: '1 Year',
-    title: 'Egyptian Air Force · ILS',
+    title: 'Egyptian Air Force — ILS',
     role: 'AI & Python Developer / Instructor',
     items: [
-      'Developed and deployed real-time AI models for NLP and CV military applications — classification, detection, tracking, and chatbots using the Agno framework.',
-      'Built Flask-based Python backend systems to serve ML/DL models and integrate with internal tools and databases.',
-      'Delivered hands-on programming and AI training sessions across the unit.',
+      'Developed and deployed multiple real-time AI models for military applications in NLP and Computer Vision, covering classification, detection, tracking, and agentic chatbots using Agno.',
+      'Built Flask-based backend systems to serve ML/DL models and integrate with internal databases and military tools.',
+      'Conducted structured AI and Python training sessions for technical military personnel.',
     ],
   },
   {
     period: 'Dec 2023 – Jul 2024',
     duration: '8 Months',
-    title: 'Egyptian Air Force · ILS',
-    role: 'Network Admin & Backend Developer',
+    title: 'Egyptian Air Force — ILS',
+    role: 'Network Administrator & Backend Developer',
     items: [
-      'Network administration and support across all Air Force units.',
-      'Systems integration across secure military networks using Cisco Networking.',
-      'Developed Flask + MySQL web applications to serve and monitor military networks.',
+      'Managed network administration and support across all Air Force units, leveraging Cisco networking expertise.',
+      'Developed Flask web applications integrated with MySQL databases to serve and monitor secure military networks.',
     ],
   },
   {
-    period: 'Ongoing',
+    period: 'Concurrent',
     duration: 'Part-time',
     title: 'IT Spark — El Sahaba Center',
     role: 'CS Instructor',
     items: [
-      'Taught Networking, Web Development, Python Programming, and Machine Learning to CS and BIS students.',
-      'Designed structured course materials, hands-on labs, and practical projects.',
-      'Mentored students with guidance, exam preparation, and career direction in technical tracks.',
+      'Taught Networking, Web Development, Python, Machine Learning, Operating Systems, and Data Security to CS and BIS students.',
+      'Designed course materials, hands-on labs, and practical projects; mentored students through exam preparation.',
     ],
   },
 ]
@@ -80,8 +80,8 @@ export default function Experience() {
                   <span className="font-mono text-[10px] text-outline uppercase">{exp.duration}</span>
                 </div>
               </div>
-              <div className="md:col-span-9 py-10 md:pl-10 group-hover:bg-surface-container-low transition-colors duration-500 relative">
-                <div className={`absolute left-0 top-10 w-2 h-2 ${exp.active ? 'bg-primary' : 'bg-outline'} rounded-full -translate-x-1 hidden md:block`} style={exp.active ? { animation: 'pulse-dot 2s infinite' } : {}}></div>
+              <div className="md:col-span-9 py-8 md:pl-10 md:pr-6 md:my-2 rounded-lg border border-transparent group-hover:border-outline-variant/40 group-hover:bg-surface-container/40 transition-all duration-350 relative">
+                <div className={`absolute left-0 top-12 w-2 h-2 ${exp.active ? 'bg-primary' : 'bg-outline'} rounded-full -translate-x-1 hidden md:block`} style={exp.active ? { animation: 'pulse-dot 2s infinite' } : {}}></div>
                 <h3 className="font-headline text-2xl md:text-3xl font-bold mb-1">{exp.title}</h3>
                 <p className="text-primary font-mono text-[10px] uppercase tracking-[0.2em] font-bold mb-6">{exp.role}</p>
                 <ul className="space-y-3 max-w-2xl">

@@ -26,16 +26,16 @@ export default function Navbar() {
               key={section}
               href={`#${section}`}
               onClick={(e) => handleNavClick(e, `#${section}`)}
-              className="nav-link font-headline tracking-wider text-on-surface hover:text-primary transition-colors uppercase text-xs font-bold"
+              className="relative py-1 font-headline tracking-wider text-on-surface hover:text-primary transition-colors uppercase text-xs font-bold group/nav"
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover/nav:w-full"></span>
             </a>
           ))}
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
-            className="bg-gradient-to-r from-primary to-[#00aecc] text-on-primary-fixed px-6 py-2 font-headline font-bold uppercase tracking-wider text-xs hover:shadow-[0_0_20px_rgba(0,240,255,0.35)] transition-all active:scale-95"
-            style={{ boxShadow: '0 0 16px rgba(0, 240, 255, 0.2)' }}
+            className="btn-glow bg-gradient-to-r from-primary to-[#00aecc] text-on-primary-fixed px-6 py-2 font-headline font-bold uppercase tracking-wider text-xs active:scale-95"
           >
             Hire Me
           </a>
